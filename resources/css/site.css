@@ -2,3 +2,9 @@
 @plugin "@tailwindcss/typography";
 @source "../views";
 @source "../../content";
+
+.blog-content {
+    p {
+        @apply mb-4 leading-7;
+    }
+}

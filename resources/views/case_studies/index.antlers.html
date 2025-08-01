@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Studies</title>
+</head>
+<body>
+    <h1>This shows all blogs</h1>
+    <main>
+        {{ collection:case_studies }}
+        <div class="m-10 p-10 bg-black/10 rounded-xl">
+            <div class="flex items-center gap-4 mb-4">
+                <h1 style="font-weight: 700;font-size: 32px">{{ title }}</h1>
+                <a href="{{ url }}" class="inline-block py-2 px-3 rounded-full bg-white text-black font-bold text-xs">Read all</a>
+            </div>
+            <p>{{ content }}</p>
+        </div>
+        {{ /collection:case_studies }}
+    </main>
+</body>
+</html>

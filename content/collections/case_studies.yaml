@@ -1,0 +1,16 @@
+title: 'Case Studies'
+template: case_studies/show
+layout: layout
+mount: 4fbb5836-ebaa-44e3-b232-8c0538095124
+revisions: false
+route: '/case-studies/{slug}'
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
